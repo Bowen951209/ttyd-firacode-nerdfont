@@ -10,7 +10,7 @@ const path = window.location.pathname.replace(/[/]+$/, '');
 const wsUrl = [protocol, '//', window.location.host, path, '/ws', window.location.search].join('');
 const tokenUrl = [window.location.protocol, '//', window.location.host, path, '/token'].join('');
 const clientOptions = {
-    rendererType: 'webgl',
+    rendererType: 'dom',
     disableLeaveAlert: false,
     disableResizeOverlay: false,
     enableZmodem: false,
@@ -22,7 +22,7 @@ const clientOptions = {
 } as ClientOptions;
 const termOptions = {
     fontSize: 13,
-    fontFamily: 'Consolas,Liberation Mono,Menlo,Courier,monospace',
+    fontFamily: 'FiraCodeNerdFont-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace',
     theme: {
         foreground: '#d2d2d2',
         background: '#2b2b2b',

@@ -11,8 +11,20 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
+  font-variant-ligatures: normal;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  font-feature-settings: "liga" on, "calt" on;
   .terminal {
     padding: 5px;
     height: calc(100% - 10px);
   }
+}
+
+@font-face {
+  font-family: 'FiraCodeNerdFont-Regular';
+  src:
+    url('webfont/FiraCodeNerdFont-Regular.woff2') format('woff2'),
+    url('webfont/FiraCodeNerdFont-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
