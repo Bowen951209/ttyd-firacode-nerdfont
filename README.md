@@ -28,4 +28,6 @@ ttyd -W bash
 
 ## Some Notes
 
-To enable ligatures in `xterm.js`, I had to use the DOM renderer, so you may experience poorer performance compared to the default WebGL renderer. There is also an `xterm.js` addon, [@xterm/addon-ligatures](https://www.npmjs.com/package/@xterm/addon-ligatures), but it requires a `Node.js` environment like `Electron`, so it is not suitable for this project.
+To enable ligatures in `xterm.js`, I had to use the DOM renderer, so you may experience poorer performance compared to the default WebGL renderer. There is also an `xterm.js` addon, [@xterm/addon-ligatures](https://www.npmjs.com/package/@xterm/addon-ligatures), but it requires a `Node.js` environment like `Electron`, so it is not suitable for this project
+
+If you want to configure your own font, you can refer to https://github.com/tsl0922/ttyd/wiki/Serving-web-fonts.
