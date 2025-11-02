@@ -22,6 +22,10 @@
 ttyd -W bash
 ```
 
-## Alternatives
+# Alternatives
 
 * [metorm/ttyd-nerd-font](https://github.com/metorm/ttyd-nerd-font) - `JetBrainsMono Nerd Font` & `Sarasa Mono SC`.
+
+## Some Notes
+
+To enable ligatures in `xterm.js`, I had to use the DOM renderer, so you may experience poorer performance than the deafult WebGL. There is a `xterm.js` addon [@xterm/addon-ligatures](https://www.npmjs.com/package/@xterm/addon-ligatures), but it requires `Node.js` environment like `Electron`, so it is not suitable for this project.
