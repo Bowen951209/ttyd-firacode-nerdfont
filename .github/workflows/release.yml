@@ -15,7 +15,10 @@ jobs:
       - name: Check version bump
         run: |
           TAG=$(git describe --tags --match "[0-9]*.[0-9]*.[0-9]*" --abbrev=8)
-          VERSION=$(grep project CMakeLists.txt| awk '{print $3}')
+          TAG="${TAG#v}" # delete the `v` in tag
+          PROJECT_VERSION=$(grep 'project(ttyd VERSION' CMakeLists.txt | awk '{print $3}')
+          PROJECT_VARIANT=$(grep 'set(PROJECT_VARIANT' CMakeLists.txt | awk -F'"' '{print $2}')
+          VERSION="${PROJECT_VERSION}-${PROJECT_VARIANT}"
           if [ "$TAG" != "$VERSION" ]; then
             echo "=== Version in CMakeLists.txt and git tag does not match!"
             echo "=== Git Tag: $TAG, Version: $VERSION"
