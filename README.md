@@ -6,7 +6,7 @@
 
 # Installation
 
-- Download pre-built binary from [Releases Page](https://github.com/Bowen951209/ttyd-firacode-nerdfont/releases).
+- Download pre-built binary from [Releases Page](https://github.com/Bowen951209/ttyd-firacode-nerdfont/releases). (You might want to rename the binary to `ttyd`)
 - Build from source:
     ```bash
     git clone https://github.com/Bowen951209/ttyd-firacode-nerdfont.git
